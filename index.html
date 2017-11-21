@@ -15,18 +15,26 @@
 	<nav class="navbar navbar-default navbar-fixed-top">
 		<div class="container">
 			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Afficher navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
 				<a class="navbar-brand" href="#">
 					<img alt="Logo SmartFollow" src="img/logo_small.png" />
 				</a>
 				<a class="navbar-brand brand-name" href="#"><strong>Smart</strong>Follow</a>
 			</div>
 
-			<ul class="nav navbar-nav navbar-right">
-				<li><a href="#home">Accueil</a></li>
-				<li><a href="#presentation">Présentation</a></li>
-				<li><a href="#gallery">Galerie</a></li>
-				<li><a href="#contact">Contact</a></li>
-			</ul>
+			<div class="collapse navbar-collapse" id="navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#home">Accueil</a></li>
+					<li><a href="#presentation">Présentation</a></li>
+					<li><a href="#gallery">Galerie</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</div>
 		</div>
 	</nav>
 
@@ -35,10 +43,10 @@
 			<div class="col-md-12">
 				<div class="container">
 					<div class="row table-display">
-						<div class="col-md-6 logo table-cell-display">
+						<div class="col-md-6 hidden-xs logo table-cell-display">
 							<img src="img/logo.png" alt="Logo SmartFollow" />
 						</div>
-						<div class="col-md-6 catch-phrase table-cell-display">
+						<div class="col-md-6 col-xs-12 catch-phrase table-cell-display">
 							<p>
 								<span class="brand-name"><strong>Smart</strong>Follow</span> est un logiciel de suivi scolaire qui permet de
 								suivre les étudiants au jour le jour,

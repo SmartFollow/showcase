@@ -17,6 +17,10 @@ body {
     max-height: 100%;
     float: none; }
 
+@media (max-width: 768px) {
+  .table-display {
+    width: auto;
+    display: block; } }
 .brand-name {
   font-weight: lighter; }
   .brand-name strong {
@@ -78,7 +82,8 @@ body {
     width: 55px;
     text-align: left;
     text-transform: uppercase;
-    line-height: inherit; }
+    line-height: inherit;
+    float: left; }
   .contact .contacts .dl-horizontal dd {
     margin-left: 65px;
     line-height: inherit; }

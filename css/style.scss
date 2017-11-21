@@ -24,6 +24,13 @@ body {
 		float: none;
 	}
 }
+@media (max-width: 768px)
+{
+	.table-display {
+		width: auto;
+		display: block;
+	}
+}
 
 .brand-name {
 	font-weight: lighter;
@@ -127,6 +134,7 @@ body {
 				text-align: left;
 				text-transform: uppercase;
 				line-height: inherit;
+				float: left;
 			}
 			dd {
 				margin-left: 65px;
