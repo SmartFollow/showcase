@@ -1,0 +1,84 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic,300,300italic);
+html, body {
+  height: 100%;
+  width: 100%; }
+
+body {
+  font-family: "Lato", Arial, sans-serif;
+  padding-top: 50px; }
+
+.table-display {
+  display: table;
+  width: 100%; }
+  .table-display .table-cell-display {
+    display: table-cell;
+    vertical-align: middle;
+    height: auto;
+    max-height: 100%;
+    float: none; }
+
+.brand-name {
+  font-weight: lighter; }
+  .brand-name strong {
+    font-weight: bold; }
+
+.navbar {
+  background-color: #1f1f1f;
+  color: #ffffff;
+  border-bottom: none; }
+  .navbar a {
+    color: inherit !important; }
+  .navbar .navbar-nav li:hover {
+    background-color: #282828; }
+
+.splashscreen, .presentation, .gallery, .contact {
+  padding-top: 35px;
+  padding-bottom: 35px; }
+  .splashscreen h2, .presentation h2, .gallery h2, .contact h2 {
+    margin-top: 0;
+    margin-bottom: 20px; }
+
+.splashscreen, .gallery {
+  background-color: #dddddd;
+  color: #333333; }
+
+.presentation, .contact {
+  background-color: #282828;
+  color: #ffffff; }
+
+.splashscreen {
+  padding-top: 70px;
+  padding-bottom: 70px; }
+  .splashscreen .logo {
+    text-align: center; }
+    .splashscreen .logo img {
+      max-width: 70%; }
+  .splashscreen .catch-phrase {
+    font-size: 1.8em; }
+    .splashscreen .catch-phrase p {
+      text-align: justify; }
+
+.presentation p, .presentation ul {
+  line-height: 1.7em; }
+
+.gallery .thumbnail .caption {
+  text-align: center;
+  padding-bottom: 5px; }
+
+.contact .contacts h4 {
+  margin-bottom: 10px;
+  margin-top: 0; }
+.contact .contacts .dl-horizontal {
+  margin-left: 15px;
+  margin-bottom: 15px;
+  line-height: 1.7em; }
+  .contact .contacts .dl-horizontal dt {
+    width: 55px;
+    text-align: left;
+    text-transform: uppercase;
+    line-height: inherit; }
+  .contact .contacts .dl-horizontal dd {
+    margin-left: 65px;
+    line-height: inherit; }
+
+/*# sourceMappingURL=style.css.map */

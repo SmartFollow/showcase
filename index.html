@@ -1,153 +1,245 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Smartfollow</title>
-    <meta name="description" content="Logiciel de suivis étudiant" />
-    <meta name="keywords" content="ecole, lycée, collège" />
-    <meta name="author" content="Moritz Thomas" />
+	<meta charset="UTF-8">
+	<title>SmartFollow - Logiciel de suivi scolaire</title>
 
-    <link rel="stylesheet" type="text/css" href="css/magnific-popup.css" />
-    <link rel="stylesheet" type="text/css" href="css/default.css" />
-    <link rel="stylesheet" type="text/css" href="css/themes/default.css" />
-    <script src="js/modernizr.custom.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="icon" type="svg" href="img/logo.ico" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
-<body class="section1-visible">
 
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">
+					<img alt="Logo SmartFollow" src="img/logo_small.png" />
+				</a>
+				<a class="navbar-brand brand-name" href="#"><strong>Smart</strong>Follow</a>
+			</div>
 
-    
-    <header class="headermobile mobile col-12">
-        <button id="releaseMenu" ></button>
-        <h1>SmartFollow</h1>
-        
-        <nav class="menu menumobile">   
-            <a class="target-section1 current" href="#section1">Home</a>
-            <a class="target-section2" href="#section2">About</a>
-            <a class="target-section3" href="#section3">Portfolio</a>
-            <a class="target-section4" href="#section4">The team</a>
-            <a class="target-section5" href="#section5">Contact</a>
-        </nav>
-    </header>   
-    
-    
-    
-    <div id="container" class="col-12">
-    
-        <header class="headerstandard">
-            <div class="headerstandard-inner">
-                <h1><b>Smart</b>Follow</h1>
-                <nav class="menu menustandard">
-                    <a class="target-section1 current" href="#section1">Home</a>
-                    <a class="target-section2" href="#section2">About</a>
-                    <a class="target-section3" href="#section3">Portfolio</a>
-                    <a class="target-section5" href="#section4">Contact</a>
-                </nav>
-            </div>
-        </header>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#home">Accueil</a></li>
+				<li><a href="#presentation">Présentation</a></li>
+				<li><a href="#gallery">Galerie</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</div>
+	</nav>
 
-        
-        <div class="main" id="main">
-            
-            <section id="section1" class="home col-7">
-                <h1>Logiciel de suivi étudiant</h1>
-                
-            </section>
-            
-            
-            
-            
-            
-            <section id="section2" class="about">
-                <h1>About Smartfollow<h2>
-                <h2>Qu'est ce que smartfollow ?</h2>
-                <hr/>
-                <p >
-					L'objectif principal du projet est d'offrir une solution complète d'ENT (environnement numérique de travail) mais entièrement personnalisable selon le fonctionnement de la structure scolaire, avec une surcouche d'intelligence artificielle permettant d'analyser l'évolution de la scolarité d'un étudiant et de détecter à temps les problèmes concernant sa scolarité, avant que cela ne compromette durablement leur scolarité.<br><br>
+	<div class="container-fluid">
+		<div class="row splashscreen" id="home">
+			<div class="col-md-12">
+				<div class="container">
+					<div class="row table-display">
+						<div class="col-md-6 logo table-cell-display">
+							<img src="img/logo.png" alt="Logo SmartFollow" />
+						</div>
+						<div class="col-md-6 catch-phrase table-cell-display">
+							<p>
+								<span class="brand-name"><strong>Smart</strong>Follow</span> est un logiciel de suivi scolaire qui permet de
+								suivre les étudiants au jour le jour,
+								pas seulement via leurs notes,
+								mais avec des critères de suivi personnalisés,
+								qui sont ensuite analysés par une intelligence artificielle,
+								pour identifier les étudiants en difficulté à temps.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-					Notre solution se destine à 4 types d'utilisateurs principaux :
-					- Les administrateurs vont définir la configuration du logiciel, à travers les différents critères de suivi, les processus métiers pour la gestion administrative de la scolarité, les groupes d'utilisateurs, les critères à utiliser pour générer automatiquement des alertes, les graphiques à afficher sur la page de chaque utilisateur, ...<br>
-- L'équipe administrative (service de vie scolaire, secrétariat, ...) va pouvoir gérer la réservation des salles, les absences des étudiants, etc...<br>
-- Les professeurs vont pouvoir renseigner les critères de suivi pour chaque personne qu'ils suivent, avec par exemple le comportement d'un élève durant une heure de cours ou ses notes aux examens.<br>
-- Les étudiants et leurs parents vont disposer d'une page personnalisée faisant un résumé de leur suivi, à travers les graphiques et les alertes qui auront été configurées par l'administrateur. Par exemple, le système pourra générer automatiquement une alerte visible par l'étudiant si ses notes diminuent et que ses problèmes de comportement augmentent, permettant ainsi de détecter plus rapidement des problèmes.<br><br>
+		<div class="row presentation" id="presentation">
+			<div class="col-md-12">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<h2>Présentation du projet</h2>
 
-A l'heure actuelle les logiciels existants se contentent d'effectuer la gestion administrative des structures scolaires, sans proposer de solution pour le suivi scolaire des étudiants et d'adapter la solution aux besoins de l'établissement. De plus, l'existant n'offre pas de solution complète et doit s'ajouter au dessus des logiciels de gestion de la vie scolaire et de la base de données de la structure.<br>
+							<p>
+								L'objectif du projet est d'offrir une solution complète d'ENT (Environnement Numérique de Travail) et entièrement personnalisable selon le fonctionnement de la structure scolaire, avec une surcouche d'intelligence artificielle permettant d'analyser l'évolution de la scolarité d'un étudiant et de détecter à temps les problèmes concernant sa scolarité, avant que cela ne compromette durablement leur scolarité.
+							</p>
 
-Notre solution permet de gérer intégralement la structure afin de proposer un outil unique pour les professeurs, l'équipe administrative (secrétariat, direction, ...) ainsi que les élèves et leurs parents réunissant les fonctionnalités nécessaires à la gestion de l'établissement (réservation des salles, gestion des classes, messagerie, ...), la gestion administrative (processus de recrutement et d'évolution du cursus de l'élève), la gestion des ressources pédagogiques (documents déposés par les professeurs, devoirs, ...) et d'y ajouter le suivi pédagogique via une intelligence artificielle qui analysera les comportements et les résultats de l'étudiant, ainsi que lui permettre de se tenir informé des événements de sa scolarité (devoirs à rendre, professeur absent, réunions, ...) via des notifications automatiques.
-                </p>
-                                                   
-            </section>
+							<p>
+								Notre solution se destine à 4 types d'utilisateurs principaux :
+							</p>
+							<ul>
+								<li>Les administrateurs vont définir la configuration du logiciel, à travers les différents critères de suivi, les processus métiers pour la gestion administrative de la scolarité, les groupes d'utilisateurs, les critères à utiliser pour générer automatiquement des alertes, les graphiques à afficher sur la page de chaque utilisateur, ...</li>
+								<li>L'équipe administrative (service de vie scolaire, secrétariat, ...) va pouvoir gérer la réservation des salles, les absences des étudiants, etc...</li>
+								<li>Les professeurs vont pouvoir renseigner les critères de suivi pour chaque personne qu'ils suivent, avec par exemple le comportement d'un élève durant une heure de cours ou ses notes aux examens.</li>
+								<li>Les étudiants et leurs parents vont disposer d'une page personnalisée faisant un résumé de leur suivi, à travers les graphiques et les alertes qui auront été configurées par l'administrateur. Par exemple, le système pourra générer automatiquement une alerte visible par l'étudiant si ses notes diminuent et que ses problèmes de comportement augmentent, permettant ainsi de détecter plus rapidement des problèmes.</li>
+							</ul>
 
-            
-            
-            
-            <section id="section3" class="portfolio">
-                <h1>Portfolio<h2>
-                <ul id="elements" class="grid">
-                        <figure>
-                            <img src="images/prof.png" alt="img01">
-                            <figcaption>
-                                <h3>Profil professeur</h3>
-                                <p>Exemple de profil pour un professeur</p>
-                                <a href="images/prof.png">Look closer</a>
-                            </figcaption>
-                        </figure>
+							<p>
+								A l'heure actuelle les logiciels existants se contentent d'effectuer la gestion administrative des structures scolaires, sans proposer de solution pour le suivi scolaire des étudiants et d'adapter la solution aux besoins de l'établissement. De plus, l'existant n'offre pas de solution complète et doit s'ajouter au dessus des logiciels de gestion de la vie scolaire et de la base de données de la structure.
+							</p>
 
-                        <figure>
-                            <img src="images/etudiant1.png" alt="img02">
-                            <figcaption>
-                                <h3>Profil édudiant</h3>
-                                <a href="images/etudiant1.png">Look closer</a>
-                            </figcaption>
-                        </figure>
+							<p>
+								Notre solution permet de gérer intégralement la structure afin de proposer un outil unique pour les professeurs, l'équipe administrative (secrétariat, direction, ...) ainsi que les élèves et leurs parents réunissant les fonctionnalités nécessaires à la gestion de l'établissement (réservation des salles, gestion des classes, messagerie, ...), la gestion administrative (processus de recrutement et d'évolution du cursus de l'élève), la gestion des ressources pédagogiques (documents déposés par les professeurs, devoirs, ...) et d'y ajouter le suivi pédagogique via une intelligence artificielle qui analysera les comportements et les résultats de l'étudiant, ainsi que lui permettre de se tenir informé des événements de sa scolarité (devoirs à rendre, professeur absent, réunions, ...) via des notifications automatiques.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-                        <figure>
-                            <img src="images/etudiant2.png" alt="img03">
-                            <figcaption>
-                                <h3>Profil édudiant</h3>
-                                <a href="images/etudiant2.png">Look closer</a>
-                            </figcaption>
-                        </figure>
+		<div class="row gallery" id="gallery">
+			<div class="col-md-12">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<h2>Galerie des fonctionnalités</h2>
 
-            
-            </section>
-            
-                       
-            
-            <section id="section4" class="contact">
-                <h1>Contact us</h1>
-                <hr />
-				<h2>Vous pouvez nous contacter directement par mail a l'aide de cette adresse : smartfollow_2018@labeip.epitech.eu</h2>                
-            </section>
-        
-        </div>
-        
-        
-        <nav class="menu">
-            <a title="" href="#section1">
-                <div class="scroll"></div>
-            </a>
-        </nav>
-        
-    </div>
-    
-    <!-- Jquery -->
-    <script src="js/jquery.min.js"></script>
-    <!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
-    <script src="js/classie.js"></script>
+							<div class="col-md-4">
+								<div class="thumbnail">
+									<img src="gallery/profile_teacher_small.jpg" alt="">
+									<div class="caption">
+										Profil d'un professeur
+									</div>
+								</div>
+							</div>
 
-    <!-- waypoints jQuery plugin by http://imakewebthings.com/ : http://imakewebthings.com/jquery-waypoints/ -->
-    <script src="js/waypoints.min.js"></script>
-    <!-- jquery-smartresize by @louis_remi : https://github.com/louisremi/jquery-smartresize -->
-    <script src="js/jquery.debouncedresize.js"></script>
-    <!-- Isotope : Filtering http://isotope.metafizzy.co/demos/filtering.html -->
-    <script src="js/jquery.isotope.min.js"></script>
-    <!-- MagnificPopup -->
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    
-    <!-- Gestion générale -->
-    <script src="js/custom.js"></script>
+							<div class="col-md-4">
+								<div class="thumbnail">
+									<img src="gallery/profile_student_small.jpg" alt="">
+									<div class="caption">
+										Profil d'un étudiant
+									</div>
+								</div>
+							</div>
 
+							<div class="col-md-4">
+								<div class="thumbnail">
+									<img src="gallery/planning_small.jpg" alt="">
+									<div class="caption">
+										Planning des activités
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-4">
+								<div class="thumbnail">
+									<img src="gallery/lesson_small.jpg" alt="">
+									<div class="caption">
+										Déroulement d'un cours
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-4">
+								<div class="thumbnail">
+									<img src="gallery/marks_exam_small.jpg" alt="">
+									<div class="caption">
+										Notation d'un examen
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-4">
+								<div class="thumbnail">
+									<img src="gallery/evaluations_small.jpg" alt="">
+									<div class="caption">
+										Évaluation des critères
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-4">
+								<div class="thumbnail">
+									<img src="gallery/notifications_small.jpg" alt="">
+									<div class="caption">
+										Notifications de l'établissement
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-4">
+								<div class="thumbnail">
+									<img src="gallery/messaging_small.jpg" alt="">
+									<div class="caption">
+										Messagerie
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row contact" id="contact">
+			<div class="col-md-12">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="row">
+								<div class="col-md-6 contacts">
+									<h4>Projet SmartFollow</h4>
+									<dl class="dl-horizontal">
+										<dt>Email</dt>
+										<dd><a href="mailto:smartfollow_2018@labeip.epitech.eu">smartfollow_2018@labeip.epitech.eu</a></dd>
+
+										<dt>GitLab</dt>
+										<dd><a href="https://gitlab.com/smartfollow/" target="_blank">https://gitlab.com/smartfollow/</a> <em>(privé)</em></dd>
+
+										<dt>GitHub</dt>
+										<dd><em>à venir</em></dd>
+									</dl>
+
+									<h4>Membres du groupe</h4>
+									<dl class="dl-horizontal">
+										<dt>Email</dt>
+										<dd>steeven.brunner@epitech.eu</dd>
+
+										<dt>Email</dt>
+										<dd>antoine.buchser@epitech.eu</dd>
+
+										<dt>Email</dt>
+										<dd>valentin.ferey@epitech.eu</dd>
+
+										<dt>Email</dt>
+										<dd>francois.kiene@epitech.eu</dd>
+
+										<dt>Email</dt>
+										<dd>thomas.moritz@epitech.eu</dd>
+
+										<dt>Email</dt>
+										<dd>alexandre.page@epitech.eu</dd>
+									</dl>
+								</div>
+								<div class="col-md-6">
+									<form>
+										<div class="form-group">
+											<label>Votre addresse email</label>
+											<input type="email" name="email" class="form-control" required="required">
+										</div>
+
+										<div class="form-group">
+											<label>L'objet de votre message</label>
+											<input type="text" name="object" class="form-control" required="required">
+										</div>
+
+										<div class="form-group">
+											<label>Votre message</label>
+											<textarea name="message" class="form-control" required="required" rows="5"></textarea>
+										</div>
+
+										<input type="submit" name="submit" value="Envoyer" class="btn btn-primary">
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
