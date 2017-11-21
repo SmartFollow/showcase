@@ -61,9 +61,11 @@ body {
 .presentation p, .presentation ul {
   line-height: 1.7em; }
 
-.gallery .thumbnail .caption {
-  text-align: center;
-  padding-bottom: 5px; }
+.gallery .thumbnail {
+  cursor: pointer; }
+  .gallery .thumbnail .caption {
+    text-align: center;
+    padding-bottom: 5px; }
 
 .contact .contacts h4 {
   margin-bottom: 10px;
@@ -80,5 +82,49 @@ body {
   .contact .contacts .dl-horizontal dd {
     margin-left: 65px;
     line-height: inherit; }
+
+.modal-wrapper {
+  display: none;
+  position: fixed;
+  z-index: 5000;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.7); }
+  .modal-wrapper.active {
+    display: block; }
+  .modal-wrapper .close-modal {
+    position: absolute;
+    top: -10px;
+    right: -9px;
+    background: #dddddd;
+    border: 2px solid #edecec;
+    opacity: 1;
+    text-shadow: none;
+    border-radius: 50px;
+    display: block;
+    width: 24px;
+    height: 24px;
+    padding: 2px;
+    font-size: 1em;
+    color: #282828; }
+    .modal-wrapper .close-modal:hover {
+      border-color: #dddddd;
+      background: #edecec; }
+  .modal-wrapper .img-modal {
+    position: relative;
+    display: inline-block;
+    width: auto;
+    max-width: 65%;
+    margin-top: 120px;
+    cursor: default;
+    background-color: #edecec;
+    border-radius: 5px;
+    padding: 5px; }
+    .modal-wrapper .img-modal img {
+      max-width: 100%; }
 
 /*# sourceMappingURL=style.css.map */
